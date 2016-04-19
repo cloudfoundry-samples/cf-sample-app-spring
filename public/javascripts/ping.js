@@ -1,6 +1,6 @@
 $(document).ready( function() {
-  var ping = setInterval( function() { txtPing() }, 1000)
-  function txtPing() {
+  var interval = 4000
+  var ping = setInterval( function() {
     $.ajax({
       url: '/ping.txt',
       dataType: 'text',
@@ -8,5 +8,6 @@ $(document).ready( function() {
         $("[data-ping='ping']").append( data )
       }
     })
-  }
+    }, interval
+  )
 })
