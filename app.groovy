@@ -1,4 +1,4 @@
-@Grab("thymeleaf-spring4")
+@Grab("thymeleaf-spring5")
 
 import org.springframework.core.env.*
 import com.fasterxml.jackson.databind.*
